@@ -1,0 +1,12 @@
+[Unit]
+Description=OWID.API.QRCODE
+
+[Service]
+Type=simple
+User=jan
+WorkingDirectory=/opt/data/owid.api/qrcode/
+ExecStart=/opt/data/dotnet/dotnet /opt/data/owid.api/qrcode/IDS.OWID.Service.QrCode.dll
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
