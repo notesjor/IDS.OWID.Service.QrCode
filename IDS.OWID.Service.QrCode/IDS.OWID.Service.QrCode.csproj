@@ -17,4 +17,10 @@
     <ProjectReference Include="..\..\..\..\Projekte-Kooperation\TfresWebserver\TefresWebserver\TFRES.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="qrcode.sh">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
