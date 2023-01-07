@@ -42,7 +42,7 @@ namespace IDS.OWID.Service.QrCode
 
     private static Net.Codecrete.QrCodeGenerator.QrCode GetQrCode(HttpContext obj)
     {
-      var data = obj.GetData();
+      var data = obj.Request.GetData();
 
       var domain = data.ContainsKey("d") ? (data["d"] == "i" ? "ids-mannheim.de" : "owid.de") : "owid.de";
       var subdomain = data.ContainsKey("s") ? data["s"] : "www";
